@@ -1,5 +1,8 @@
 
 const beetlesAndStones = (s, b) => {
+    /* if (s < b) { // проверка, что камней меньше чем жуков 
+        return null;
+    } */
     let freeStones = [s]; // массив свободных камней
     let left;
     let right;
@@ -22,3 +25,5 @@ const beetlesAndStones = (s, b) => {
 console.log(beetlesAndStones(8, 1)); // 3,4
 console.log(beetlesAndStones(8, 2)); // 1, 2
 console.log(beetlesAndStones(8, 3)); // 1, 1
+console.log(beetlesAndStones(8, 8)); // 0, 0
+/* console.log(beetlesAndStones(8, 9)); // null */
